@@ -15,4 +15,8 @@ class Profile extends Model
     'hobby' => 'required',
     'introduction' => 'required',
   );
+  public function changes()
+  {
+    return $this->hasMany('App\Change');
+  }
 }
